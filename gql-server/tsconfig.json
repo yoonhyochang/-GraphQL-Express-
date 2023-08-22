@@ -1,0 +1,26 @@
+{
+  "compilerOptions": {  // 컴파일러 옵션 설정
+    "target": "es6",  // 컴파일 대상 ECMAScript 버전
+    "module": "commonjs",  // 모듈 시스템을 정의
+    "lib": ["ES6", "ES2017", "ES2018", "ES2019", "ES2020"],  // 컴파일에 포함될 라이브러리 목록
+    "sourceMap": true,  // 소스 맵 생성 활성화
+    "outDir": "./dist",  // 출력 디렉터리 경로
+    "rootDir": "src",  // 소스 파일이 위치한 루트 디렉터리
+    "moduleResolution": "node",  // 모듈 해석 전략
+    "removeComments": true,  // 컴파일 시 주석 제거
+    "noImplicitAny": true,  // any 타입의 암시적 사용 금지
+    "strictNullChecks": true,  // 엄격한 null 검사 활성화
+    "strictFunctionTypes": true,  // 엄격한 함수 타입 검사 활성화
+    "noImplicitThis": true,  // this의 암시적 사용 금지
+    "noUnusedLocals": true,  // 사용하지 않는 로컬 변수에 대한 오류 활성화
+    "noUnusedParameters": false,  // 사용하지 않는 매개변수에 대한 오류 비활성화
+    "noImplicitReturns": true,  // 함수에서 모든 경로가 값을 반환하도록 강제
+    "noFallthroughCasesInSwitch": true,  // switch 문의 case를 빠뜨리지 않도록 강제
+    "allowSyntheticDefaultImports": true,  // 실제로는 존재하지 않는 default import 허용
+    "esModuleInterop": true,  // ES 모듈과의 상호운용성 활성화
+    "emitDecoratorMetadata": true,  // 데코레이터 메타데이터 출력 활성화
+    "experimentalDecorators": true  // 실험적 데코레이터 사용 활성화
+  },
+  "exclude": ["node_modules"],  // 컴파일에서 제외될 디렉터리 또는 파일
+  "include": ["./src/**/*.tsx", "./src/**/*.ts"]  // 컴파일에 포함될 파일 패턴
+}
