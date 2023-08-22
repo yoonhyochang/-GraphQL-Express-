@@ -1,5 +1,5 @@
 # SubTalk 프로젝트 설정
-**프로젝트를 위한 package.json 파일 생성** 
+**프로젝트를 위한 package.json 파일 생성** <br> 
 npm init
 **TypeScript 패키지 설치** 
 npm i typescript
