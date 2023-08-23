@@ -30,4 +30,5 @@
 //* 1.5.2. npm i @types/express jest @types/jest ts-jest nodemon  //타입 정의, 테스트 라이브러리, 개발용 모니터링 도구 설치
 //* 1.5.3. npm install -g ts-node-dev  //ts-node-dev를 전역으로 설치 (TypeScript 파일 실행 도구)
 
-
+//* 2. 의존성 설치 후 Express 서버 시작 하여 동작여부 확인하기
+//* 2.1 서버를 초기화 해주는 서버 구성 스크립트 만들기 node-server 안에 src 폴더 만든 후 index.ts 파일 만들기
