@@ -10,7 +10,7 @@ import typeDefs from "./typeDefs"; // GraphQL 타입 정의를 가져옵니다.
 import resolvers from "./resolvers"; // GraphQL 리졸버를 가져옵니다.
 import { applyMiddleware } from "graphql-middleware"; // GraphQL 미들웨어를 적용하는 라이브러리입니다.
 import { log } from "./Logger"; // Logger 미들웨어를 가져옵니다.
-//! 4.4.2 import cors from 'cors'; 추가
+//? 4.4.1 import cors from 'cors'; 추가
 import cors from 'cors';
 
 const app = express(); // Express 앱 인스턴스를 생성합니다.
@@ -65,7 +65,7 @@ const apolloServer = new ApolloServer({
     ],
   });
 
-  //! 4.4.3 CORS 설정: 모든 도메인에서의 POST 요청 허용
+  //? 4.4.2 CORS 설정: 모든 도메인에서의 POST 요청 허용
   app.use(cors({
     origin: '*', // 모든 도메인에서의 요청을 허용하거나 특정 도메인을 명시
     methods: 'POST', // 허용할 HTTP 메서드
@@ -74,7 +74,7 @@ const apolloServer = new ApolloServer({
   // 서버 시작 후 미들웨어 적용과 리스닝을 설정합니다.
 apolloServer.start().then(() => {
 
-    //! 4.4.3 cors: true 로 변경
+    //? 4.4.3 cors: true 로 변경
     apolloServer.applyMiddleware({ app, cors: true });
     httpServer.listen({ port: 8000 }, () => {
       console.log("GraphQL server ready."); // 서버가 준비되었음을 알립니다.
@@ -90,3 +90,4 @@ apolloServer.start().then(() => {
    //*        }
    //! 4.4.1 cors 설정 이슈 
    
+ //* 5 GraphQL을사용 해 테스트 만들기 
