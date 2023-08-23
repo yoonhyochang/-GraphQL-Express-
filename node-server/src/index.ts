@@ -47,3 +47,6 @@ server.listen({ port: 8000 }, () => { // 8000 포트에서 서버를 시작하�
      // -D 옵션을 사용하여 개발 의존성으로 ws 패키지의 TypeScript 타입 정의를 설치
 
 //* 3.9. npm start를 통한 실행확인
+
+//* 4. 미들웨어 추가하고 어떻게 동작하는 확인
+//* 4.1 gql-server/src 에 Logger.ts 파일 생성
