@@ -70,3 +70,6 @@ describe("Testing getting a user", () => {
 
 
 // *10. gql-server 경로에서 터미널을 통해 jest 명령을 실행 후 결과 확인
+//! 10-1  'jest' 명령이 시스템 경로에 없거나 설치되지 않았음
+//? 10-1-1 npm install -g jest 또는 npm install --save-dev jest 설치
+//? 10-1-2 package.json 파일 내의 scripts 섹션에서 테스트 명령을 설정("scripts": {"test": "jest"})
